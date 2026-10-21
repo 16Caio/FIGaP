@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 300px;
+    background-color: #1E2A3A;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F0EF;
+}
+
+.chat-cabecalho {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 15px 25px;
+}
+
+.chat-mensagens {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    overflow-y: auto;
+}
+
+.chat-mensagens::-webkit-scrollbar {
+    width: 12px;   
+}
+
+.chat-mensagens::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-mensagens::-webkit-scrollbar-thumb {
+    background-color: #9A9A9A; 
+    border-radius: 10px;
+    border: 2px solid #F2F0EF;
+}
+
+.mensagem {
+    max-width: 47.5%;
+    margin: 10px 0px;
+}
+
+.mensagem-usuario {
+    align-self: flex-end;
+    background-color: #1E2A3A;
+    padding: 15px;
+    border-radius: 20px 0px 20px 20px;
+    color: #F2F0EF;
+}
+
+.mensagem-ferramenta {
+    align-self: flex-start;
+    background-color: #D9D9D9;
+    border-radius: 0px 20px 20px 20px;
+    border: 2px solid #9A9A9A;
+    color: #1E1E1E;
+}
+
+.mensagem-ferramenta-texto {
+    padding: 15px;
+}
+
+.card-gatilho {
+    border-top: 1px solid #9A9A9A;
+    padding: 10px 15px;
+}
+
+.cabecalho-gatilho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.classificacao-gatilho {
+    background-color: #F2F0EF;
+    border: 2px solid #1E2A3A;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.link-gatilho {
+    color: #006eff;
+}
+
+.texto-gatilho {
+    background-color: #F2F0EF;
+    padding: 5px;
+    border-left: 3px solid #1E2A3A;
+}
+
+.input-area {
+    border-top: 1px solid #D9D9D9;
+}
+
+#chat-form {
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #9A9A9A;
+}
+
+#input-texto {
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    flex: 1;
+}

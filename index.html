@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>FIGaP</title>
 </head>
 <body>
@@ -27,14 +28,45 @@
         </footer>
     </aside>
     <main>
-        <header>
-            <!-- Nome do chat, última alteração-->
+        <header class="chat-cabecalho">
+            <h1>Nome do Chat</h1>
+            <p>Última atualização em dd/MM às HH:mm</p>
         </header>
-        <section>
-            <!-- balões de conversa -->
+        <section class="chat-mensagens">
+            <div class="mensagem mensagem-usuario">
+                <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Vivamus id tortor vel felis porttitor
+                gravida. Integer aliquet neque sit amet odio varius...</p>
+            </div>
+            <div class="mensagem mensagem-ferramenta">
+                <div class="mensagem-ferramenta-texto">
+                    <p>Foram identificados 2 possíveis gatilhos de persuasão no texto.
+                    Toque em “Ver no texto” para localizar cada trecho.</p>
+                </div>
+                <div class="lista-gatilhos">
+                    <div class="card-gatilho">
+                        <div class="cabecalho-gatilho">
+                            <div class="classificacao-gatilho">Escassez</div>
+                            <a href="" class="link-gatilho">Ver no texto</a>
+                        </div>
+                        <div class="texto-gatilho">
+                            <p>“Vivamus id tortor vel felis”“Vivamus id tortor vel felis”“Vivamus id tortor vel felis”</p>
+                        </div>
+                    </div>
+                    <div class="card-gatilho">
+                        <div class="cabecalho-gatilho">
+                            <div class="classificacao-gatilho">Escassez</div>
+                            <a href="" class="link-gatilho">Ver no texto</a>
+                        </div>
+                        <div class="texto-gatilho">
+                            <p>“Vivamus id tortor vel felis”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div>
-            <form action="">
+        <div class="input-area">
+            <form id="chat-form" action="">
                 <input name="input-arquivo" id="input-arquivo" type="file" accept=".pdf, image/*">
                 <textarea name="input-texto" id="input-texto" placeholder="Cole um texto ou anexe um PDF para analisar..."></textarea>
                 <button id="botao-enviar" type="submit">Enviar</button>
