@@ -82,7 +82,13 @@
         </section>
         <div class="input-area">
             <form id="chat-form" action="">
-                <input name="input-arquivo" id="input-arquivo" type="file" accept=".pdf, image/*">
+                <div class="container-upload">
+                    <input name="input-arquivo" id="input-arquivo" class="input-escondido" type="file" accept=".pdf, image/*">
+                    <label for="input-arquivo" class="botao-anexo">
+                        Arq
+                    </label>
+                    <div id="preview-arquivo" class="preview-arquivo"></div>
+                </div>
                 <textarea name="input-texto" id="input-texto" placeholder="Cole um texto ou anexe um PDF para analisar..."></textarea>
                 <button id="botao-enviar" type="submit">Enviar</button>
             </form>

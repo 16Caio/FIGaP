@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    font-weight: 500;
 }
 
 body {
     display: flex;
     height: 100vh;
+    color: #1E1E1E;
+    font-weight: 500;
 }
 
 aside {
@@ -19,6 +20,10 @@ aside {
 }
 
 h1 {
+    font-weight: 600;
+}
+
+h3 {
     font-weight: 600;
 }
 
@@ -55,13 +60,14 @@ span {
     border-radius: 10px;
     border: 0px;
     background-color: #1E2A3A;
-    color: #D9D9D9;
+    color: #F2F0EF;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .botao-nova-analise:hover {
     background-color: #2B3440;
+    color: #c4c3c3;
 }
 
 .botao-pequeno-sidebar{
@@ -70,13 +76,14 @@ span {
     min-width: 30px;
     min-height: 30px;
     border: 0;
-    color: #D9D9D9;
+    color: #F2F0EF;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .botao-pequeno-sidebar:hover {
     background-color: #2B3440;
+    color: #c4c3c3;
 }
 
 .sidebar-conteudo {
@@ -106,7 +113,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 20px 0px;
-    color: #D9D9D9;
+    color: #F2F0EF;
 }
 
 .lista-chats-main {
@@ -121,13 +128,14 @@ span {
     border-radius: 10px;
     border: 0px;
     background-color: #1E2A3A;
-    color: #D9D9D9;
+    color: #F2F0EF;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .item-chat:hover {
     background-color: #2B3440;
+    color: #c4c3c3;
 }
 
 .item-chat-escolhido {
@@ -143,7 +151,7 @@ span {
     flex-direction: column;
     justify-content: space-between;
     border-top: 1px solid #9A9A9A;
-    min-height: 93px;
+    min-height: 103px;
     gap: 5px;
 }
 
@@ -157,13 +165,14 @@ span {
     padding: 0px 5px;
     margin-top: 5px;
     background-color: #1E2A3A;
-    color: #D9D9D9;
+    color: #F2F0EF;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .botao-feedback:hover {
     background-color: #2B3440;
+    color: #c4c3c3;
 }
 
 .botao-login {
@@ -171,7 +180,7 @@ span {
     border-radius: 10px;
     border: 0px;
     margin-bottom: 5px;
-    background-color: #D9D9D9;
+    background-color: #F2F0EF;
     color: #1E2A3A;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -179,6 +188,7 @@ span {
 
 .botao-login:hover {
     background-color: #929292;
+    color: #111821;
 }
 
 main {
@@ -284,10 +294,54 @@ main {
     border: 1px solid #9A9A9A;
 }
 
+.input-escondido {
+    display: none;
+}
+
+.botao-anexo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: #1E1E1E;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-anexo:hover {
+    background-color: #a6a6a6; 
+    color: #090909;
+}
+
+.preview-arquivo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #input-texto {
     background: transparent;
     border: none;
     resize: none;
     outline: none;
     flex: 1;
+    font-size: 1em;
+    margin: 0px 20px;
+}
+
+#botao-enviar {
+    background-color: #1E1E1E;
+    color: #F2F0EF;
+    padding: 10px;
+    border: 0;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-enviar:hover {
+    background-color: #000000;
+    color: #c4c3c3;
 }
