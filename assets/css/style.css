@@ -12,6 +12,151 @@ body {
 aside {
     width: 300px;
     background-color: #1E2A3A;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 0px 15px;
+}
+
+.logo-e-botao-fechar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 86px;
+}
+
+.div-btn-nova-analise{
+    display: flex;
+    padding: 10px 0px;
+    border-bottom: 1px solid #9A9A9A;
+}
+
+.botao-nova-analise {
+    flex: 1;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: left;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #1E2A3A;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-nova-analise:hover {
+    background-color: #2B3440;
+}
+
+.botao-pequeno-sidebar{
+    background-color: #1E2A3A;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    border: 0;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-pequeno-sidebar:hover {
+    background-color: #2B3440;
+}
+
+.sidebar-conteudo {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-conteudo::-webkit-scrollbar {
+    width: 12px;   
+}
+
+.sidebar-conteudo::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-conteudo::-webkit-scrollbar-thumb {
+    background-color: #9A9A9A; 
+    border-radius: 10px;
+    border: 2px solid #1E2A3A;
+}
+
+.lista-chats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+    color: #D9D9D9;
+}
+
+.item-chat {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #1E2A3A;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-chat:hover {
+    background-color: #2B3440;
+}
+
+.item-chat-escolhido {
+    background-color: #192028;
+}
+
+.sidebar-footer {
+    padding: 0px 10px;
+}
+
+.div-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #9A9A9A;
+    min-height: 93px;
+}
+
+.botao-feedback {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px 5px;
+    margin: 5px 0px 2.5px 0px;
+    background-color: #1E2A3A;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-feedback:hover {
+    background-color: #2B3440;
+}
+
+.botao-login {
+    flex: 1;
+    border-radius: 10px;
+    border: 0px;
+    margin: 2.5px 0px 5px 0px;
+    background-color: #D9D9D9;
+    color: #1E2A3A;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-login:hover {
+    background-color: #929292;
 }
 
 main {
@@ -21,9 +166,10 @@ main {
     background-color: #F2F0EF;
 }
 
-.chat-cabecalho {
+.chat-header {
     border-bottom: 1px solid #D9D9D9;
     padding: 15px 25px;
+    min-height: 86px;
 }
 
 .chat-mensagens {
@@ -78,7 +224,7 @@ main {
     padding: 10px 15px;
 }
 
-.cabecalho-gatilho {
+.header-gatilho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +257,7 @@ main {
     display: flex;
     align-items: center;
     background-color: #D9D9D9;
-    padding: 15px;
+    padding: 20px;
     border-radius: 25px;
     border: 1px solid #9A9A9A;
 }

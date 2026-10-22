@@ -8,28 +8,40 @@
 </head>
 <body>
     <aside>
-        <header>
-            <!-- Logo -->   
+        <header class="sidebar-header">
+            <div class="logo-e-botao-fechar">
+                <h1>FIGaP</h1>
+                <button id="botao-fechar-sidebar" class="botao-pequeno-sidebar">ZZ</button>
+            </div>
+            <div class="div-btn-nova-analise">
+                <button id="botao-nova-analise" class="botao-nova-analise">+ Nova Análise</button>
+            </div>
         </header>
-        <div>
-            <button>
-                <!-- botão 'Nova análise'-->
-            </button>
-            <div>
-                <!-- "Recentes", ícone 'Lupa', 'ícone Seta dupla' -->
+        <div class="sidebar-conteudo">
+            <div class="lista-chats-header">
+                <p>Chats Recentes</p>
+                <div>
+                    <button id="botao-procurar-chats" class="botao-pequeno-sidebar">O\</button>
+                </div>
             </div>
             <nav>
-                <!-- Lista de chats -->
+                <ul class="lista-chats-main">
+                    <li class="item-chat item-chat-escolhido">Chat Específico</li>
+                    <li class="item-chat">Nome do Chat</li>
+                    <li class="item-chat">Nome do Chat</li>
+                </ul>
             </nav>
         </div>
-        <footer>
-            <!-- botão 'Enviar Feedback'-->
-            <!-- botão 'Login' -->
+        <footer class="sidebar-footer">
+            <div class="div-botoes">
+                <button class="botao-feedback">Enviar Feedback</button>
+                <button class="botao-login">Fazer Login</button>
+            </div>
         </footer>
     </aside>
     <main>
-        <header class="chat-cabecalho">
-            <h1>Nome do Chat</h1>
+        <header class="chat-header">
+            <h1>Chat Específico</h1>
             <p>Última atualização em dd/MM às HH:mm</p>
         </header>
         <section class="chat-mensagens">
@@ -45,7 +57,7 @@
                 </div>
                 <div class="lista-gatilhos">
                     <div class="card-gatilho">
-                        <div class="cabecalho-gatilho">
+                        <div class="header-gatilho">
                             <div class="classificacao-gatilho">Escassez</div>
                             <a href="" class="link-gatilho">Ver no texto</a>
                         </div>
@@ -54,7 +66,7 @@
                         </div>
                     </div>
                     <div class="card-gatilho">
-                        <div class="cabecalho-gatilho">
+                        <div class="header-gatilho">
                             <div class="classificacao-gatilho">Escassez</div>
                             <a href="" class="link-gatilho">Ver no texto</a>
                         </div>
