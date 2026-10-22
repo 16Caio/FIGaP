@@ -95,6 +95,13 @@ aside {
     color: #D9D9D9;
 }
 
+.lista-chats-main {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .item-chat {
     padding: 10px 5px;
     border-radius: 10px;
@@ -123,6 +130,7 @@ aside {
     justify-content: space-between;
     border-top: 1px solid #9A9A9A;
     min-height: 93px;
+    gap: 5px;
 }
 
 .botao-feedback {
@@ -133,7 +141,7 @@ aside {
     border-radius: 10px;
     border: 0px;
     padding: 0px 5px;
-    margin: 5px 0px 2.5px 0px;
+    margin-top: 5px;
     background-color: #1E2A3A;
     color: #D9D9D9;
     cursor: pointer;
@@ -148,7 +156,7 @@ aside {
     flex: 1;
     border-radius: 10px;
     border: 0px;
-    margin: 2.5px 0px 5px 0px;
+    margin-bottom: 5px;
     background-color: #D9D9D9;
     color: #1E2A3A;
     cursor: pointer;
