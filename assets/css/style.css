@@ -321,6 +321,13 @@ main {
     gap: 10px;
 }
 
+.miniatura-anexo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
 #input-texto {
     background: transparent;
     border: none;
